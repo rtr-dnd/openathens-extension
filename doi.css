@@ -1,0 +1,74 @@
+:root {
+  color-scheme: light dark;
+  font: 16px/1.6 system-ui, sans-serif;
+  color: light-dark(#142733, #e9f4f7);
+  background: light-dark(#edf4f6, #101c26);
+}
+
+body {
+  margin: 0;
+  padding: clamp(24px, 8vw, 96px) 16px 32px;
+}
+
+main {
+  box-sizing: border-box;
+  max-width: 520px;
+  margin-inline: auto;
+  padding: clamp(20px, 5vw, 36px);
+  border: 1px solid light-dark(#c6d7e0, #3a505d);
+  border-radius: 18px;
+  background: light-dark(#fff, #192a36);
+}
+
+img {
+  display: block;
+}
+
+h1 {
+  margin: 12px 0 24px;
+  font-size: clamp(20px, 5vw, 26px);
+  line-height: 1.4;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input,
+button {
+  box-sizing: border-box;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font: inherit;
+}
+
+input {
+  width: 100%;
+  border: 1px solid light-dark(#69818f, #829ca9);
+  background: light-dark(#fff, #101c26);
+}
+
+button {
+  margin-top: 16px;
+  border: 0;
+  background: light-dark(#07576b, #99ddec);
+  color: light-dark(#fff, #142733);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+:focus-visible {
+  outline: 2px solid light-dark(#07576b, #99ddec);
+  outline-offset: 3px;
+}
+
+#error {
+  margin: 8px 0 0;
+  color: light-dark(#a52b1e, #ffb4a7);
+}
+
+#error:empty {
+  margin: 0;
+}

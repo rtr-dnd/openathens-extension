@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DOI を開く | UTokyo OA</title>
+  <link rel="icon" href="icons/32.png">
+  <link rel="stylesheet" href="doi.css">
+  <script type="module" src="doi.js"></script>
+</head>
+<body>
+  <main>
+    <img src="icons/48.png" alt="" width="40" height="40">
+    <h1>DOI を UTokyo OA で開く</h1>
+    <form>
+      <label for="doi">DOI または doi.org の URL</label>
+      <input id="doi" name="doi" type="text" placeholder="10.1038/nature12373"
+             autocomplete="off" autocapitalize="off" spellcheck="false" required autofocus
+             aria-describedby="error">
+      <p id="error" role="status"></p>
+      <button type="submit">OpenAthens で開く</button>
+    </form>
+  </main>
+</body>
+</html>
